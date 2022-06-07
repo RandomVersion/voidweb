@@ -6,4 +6,4 @@ bl_test = Blueprint('test', __name__)
 
 @bl_test.route('/api/v1/exploit/test')
 def index():
-    return 'hi'
+    return os.urandom(16)
