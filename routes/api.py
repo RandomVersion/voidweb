@@ -1,10 +1,7 @@
 from flask import Flask, Blueprint, render_template, redirect, send_from_directory
-from markupsafe import escape
 import os
 
 bl_api = Blueprint('api', __name__)
-
-pathlist = ['users', 'troll', 'exploit', 'grab']
 
 currentversion = 'v1'
 
